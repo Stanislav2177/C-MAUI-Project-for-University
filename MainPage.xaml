@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectMaui.MainPage">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Student Management"
+               FontSize="32"
+               TextColor="#2196F3"
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"
+               Margin="0,20,0,20" />
+
+        <Image Source="icon_student_management.png" 
+               HorizontalOptions="Center"
+               WidthRequest="150"
+               HeightRequest="150"
+               Margin="0,20,0,20" />
+
+        <Button Text="Add Student"
+                FontSize="18"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="60"
+                Clicked="OnAddStudentClicked"
+                HorizontalOptions="FillAndExpand" />
+
+        <Button Text="View Students"
+                FontSize="18"
+                BackgroundColor="#FFC107"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="60"
+                Clicked="OnViewStudentsClicked"
+                HorizontalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>

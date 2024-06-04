@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectMaui.AddStudentPage">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Add New Student"
+               FontSize="28"
+               TextColor="#2196F3"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               Margin="0,20,0,20" />
+
+        <Frame BackgroundColor="#E0E0E0"
+               Padding="10"
+               Margin="0,0,0,10">
+            <Entry x:Name="nameEntry"
+                   Placeholder="Enter Student Name"
+                   FontSize="18"
+                   TextColor="#333" />
+        </Frame>
+
+        <Frame BackgroundColor="#E0E0E0"
+               Padding="10"
+               Margin="0,0,0,10">
+            <Entry x:Name="ageEntry"
+                   Placeholder="Enter Student Age"
+                   FontSize="18"
+                   TextColor="#333"
+                   Keyboard="Numeric" />
+        </Frame>
+
+        <Frame BackgroundColor="#E0E0E0"
+               Padding="10"
+               Margin="0,0,0,10">
+            <Entry x:Name="classEntry"
+                   Placeholder="Enter Class"
+                   FontSize="18"
+                   TextColor="#333" />
+        </Frame>
+
+        <Button Text="Save Student"
+                FontSize="18"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                HeightRequest="60"
+                Clicked="OnSaveStudentClicked"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>
